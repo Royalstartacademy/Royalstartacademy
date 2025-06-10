@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admissions - Royalstart Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #800000;
+      --white: #ffffff;
+      --text-dark: #000000;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--maroon);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px var(--shadow);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a,
+    .dropbtn {
+      color: var(--white);
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--white);
+      min-width: 180px;
+      box-shadow: 0px 8px 16px var(--shadow);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: var(--text-dark);
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    nav a:hover,
+    .dropbtn:hover {
+      outline: 2px solid black;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    main h1 {
+      color: var(--maroon);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      gap: 1.2rem;
+      background-color: #fff0f0;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      width: 100%;
+    }
+
+    button {
+      background-color: var(--maroon);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #a00000;
+    }
+
+    .confirmation {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #cfcfcf;
+      background-color: #e6ffed;
+      border-radius: 6px;
+      color: #155724;
+      font-weight: 500;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Royalstart Academy</strong></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Why Royalstart</button>
+        <div class="dropdown-content">
+          <a href="mission.html">Mission</a>
+          <a href="vision.html">Vision</a>
+          <a href="corevalues.html">Core Values</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Admissions</button>
+        <div class="dropdown-content">
+          <a href="admission.html">Apply Now</a>
+          <a href="tuitionfees.html">Tuition & Fees</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Learning</button>
+        <div class="dropdown-content">
+          <a href="curriculum.html">Curriculum</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="library.html">Library</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Admission Form</h1>
+    <form id="admissionForm" action="https://formspree.io/f/xzzgeynz" method="POST">
+      <label for="pupilName">Name of Pupil *</label>
+      <input type="text" id="pupilName" name="pupilName" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob">
+
+      <label for="dateOfAdmission">Date of Admission</label>
+      <input type="date" id="dateOfAdmission" name="dateOfAdmission" readonly>
+
+      <label for="previousSchool">Previous School</label>
+      <input type="text" id="previousSchool" name="previousSchool">
+
+      <label for="guardian">Parent/Guardian</label>
+      <input type="text" id="guardian" name="guardian">
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address">
+
+      <label for="telephone">Telephone</label>
+      <input type="tel" id="telephone" name="telephone">
+
+      <label for="homeTelephone">Home Telephone</label>
+      <input type="tel" id="homeTelephone" name="homeTelephone">
+
+      <label for="parentWork">Parent's Place of Work</label>
+      <input type="text" id="parentWork" name="parentWork">
+
+      <label for="fatherName">Father's Name</label>
+      <input type="text" id="fatherName" name="fatherName">
+
+      <label for="fatherPhone">Father's Telephone</label>
+      <input type="tel" id="fatherPhone" name="fatherPhone">
+
+      <label for="fatherWork">Father's Place of Work</label>
+      <input type="text" id="fatherWork" name="fatherWork">
+
+      <label for="motherName">Mother's Name</label>
+      <input type="text" id="motherName" name="motherName">
+
+      <label for="motherPhone">Mother's Telephone</label>
+      <input type="tel" id="motherPhone" name="motherPhone">
+
+      <label for="motherWork">Mother's Place of Work</label>
+      <input type="text" id="motherWork" name="motherWork">
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <div class="confirmation" id="confirmationMessage">
+      Admission successful! For more information, please contact:<br>
+      <strong>+254113226979, +254729043916, +254725201450</strong>
+    </div>
+  </main>
+
+  <script>
+    // Set today's date automatically
+    document.getElementById('dateOfAdmission').value = new Date().toISOString().split('T')[0];
+  </script>
+</body>
+</html>

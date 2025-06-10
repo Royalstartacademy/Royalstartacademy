@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facilities - Royalstart Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: #800000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a,
+    .dropbtn {
+      color: #fff;
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: #000;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    nav a:hover,
+    .dropbtn:hover {
+      outline: 2px solid black;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #800000;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .facility {
+      margin-bottom: 2rem;
+    }
+
+    .facility h2 {
+      font-size: 1.5rem;
+      color: #800000;
+    }
+
+    .facility p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Royalstart Academy</strong></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Why Royalstart</button>
+        <div class="dropdown-content">
+          <a href="mission.html">Mission</a>
+          <a href="vision.html">Vision</a>
+          <a href="corevalues.html">Core Values</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Admissions</button>
+        <div class="dropdown-content">
+          <a href="admission.html">Apply Now</a>
+          <a href="tuitionfees.html">Tuition & Fees</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Learning</button>
+        <div class="dropdown-content">
+          <a href="curriculum.html">Curriculum</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="library.html">Library</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Facilities</h1>
+
+    <div class="facility">
+      <h2>Modern Classrooms</h2>
+      <p>Each classroom is well-ventilated, spacious, and equipped with child-friendly furniture to provide a conducive learning environment.</p>
+    </div>
+
+    <div class="facility">
+      <h2>Outdoor Playground</h2>
+      <p>We have a secure and fun outdoor playground with swings, slides, and sports equipment to support physical development.</p>
+    </div>
+
+    <div class="facility">
+      <h2>ICT Lab</h2>
+      <p>Our computer lab introduces students to basic computing skills and digital literacy through guided, hands-on sessions.</p>
+    </div>
+
+    <div class="facility">
+      <h2>Library</h2>
+      <p>A quiet and resourceful library that fosters reading culture and provides access to a wide variety of books and learning materials.</p>
+    </div>
+
+    <div class="facility">
+      <h2>Sanitation & Clean Water</h2>
+      <p>We maintain high hygiene standards with clean washrooms and access to safe drinking water for all pupils and staff.</p>
+    </div>
+  </main>
+</body>
+</html>

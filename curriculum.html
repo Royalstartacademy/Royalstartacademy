@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum - Royalstart Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #800000;
+      --white: #ffffff;
+      --text-dark: #000000;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--maroon);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px var(--shadow);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a,
+    .dropbtn {
+      color: var(--white);
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      position: relative;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--white);
+      min-width: 180px;
+      box-shadow: 0px 8px 16px var(--shadow);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: var(--text-dark);
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    nav a:hover,
+    .dropbtn:hover {
+      outline: 2px solid black;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      color: var(--maroon);
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--maroon);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Royalstart Academy</strong></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Why Royalstart</button>
+        <div class="dropdown-content">
+          <a href="mission.html">Mission</a>
+          <a href="vision.html">Vision</a>
+          <a href="corevalues.html">Core Values</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Admissions</button>
+        <div class="dropdown-content">
+          <a href="admission.html">Apply Now</a>
+          <a href="tuitionfees.html">Tuition & Fees</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Learning</button>
+        <div class="dropdown-content">
+          <a href="curriculum.html">Curriculum</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="library.html">Library</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Curriculum Overview</h1>
+
+    <div class="section">
+      <h2>Early Childhood Education (Playgroup & Pre-Primary)</h2>
+      <p>
+        Our early childhood program focuses on foundational skills in literacy, numeracy, communication, and social interaction. Through play-based learning, storytelling, music, and creative arts, children develop cognitive and motor skills in a nurturing environment.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Lower Primary (Grade 1 - 3)</h2>
+      <p>
+        We follow the CBC (Competency-Based Curriculum) approach, ensuring students master key competencies including critical thinking, collaboration, and problem-solving. Subjects include English, Kiswahili, Mathematics, Environmental Activities, Hygiene, and CRE.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Co-Curricular Activities</h2>
+      <p>
+        We believe in holistic development. Our co-curricular offerings include physical education, music, art & craft, storytelling, drama, and interactive technology sessions tailored for each grade level.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Assessment & Progress Monitoring</h2>
+      <p>
+        Learners are assessed continuously through assignments, classwork, and termly exams. We maintain open communication with parents on learners' progress through regular reports and parent-teacher meetings.
+      </p>
+    </div>
+  </main>
+</body>
+</html>

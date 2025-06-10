@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royalstart Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #800000;
+      --white: #ffffff;
+      --light-gray: #f5f5f5;
+      --text-dark: #000000;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .cover-page {
+      background-color: var(--maroon);
+      color: var(--white);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .cover-page h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .cover-page p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+
+    .discover-button {
+      background-color: var(--white);
+      color: var(--maroon);
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .discover-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px var(--shadow);
+    }
+  </style>
+</head>
+<body>
+  <div class="cover-page">
+    <h1>Welcome to Royalstart Academy</h1>
+    <p>Empowering Future Leaders with Quality Education</p>
+    <a class="discover-button" href="home.html">Discover More</a>
+  </div>
+</body>
+</html>

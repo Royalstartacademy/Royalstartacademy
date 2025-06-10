@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - Royalstart Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #800000;
+      --white: #ffffff;
+      --text-dark: #000000;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--maroon);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px var(--shadow);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a,
+    .dropbtn {
+      color: var(--white);
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--white);
+      min-width: 180px;
+      box-shadow: 0px 8px 16px var(--shadow);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: var(--text-dark);
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    nav a:hover,
+    .dropbtn:hover {
+      outline: 2px solid black;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      color: var(--maroon);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item h3 {
+      color: var(--maroon);
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-item p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Royalstart Academy</strong></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Why Royalstart</button>
+        <div class="dropdown-content">
+          <a href="mission.html">Mission</a>
+          <a href="vision.html">Vision</a>
+          <a href="corevalues.html">Core Values</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Admissions</button>
+        <div class="dropdown-content">
+          <a href="admission.html">Apply Now</a>
+          <a href="tuitionfees.html">Tuition & Fees</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Learning</button>
+        <div class="dropdown-content">
+          <a href="curriculum.html">Curriculum</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="library.html">Library</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <h3>What is the age requirement for admission into Playgroup?</h3>
+      <p>Children must be at least 3 years old to be enrolled in Playgroup.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How can I apply for admission?</h3>
+      <p>You can apply online through the "Apply Now" link under the Admissions tab, or visit our school for a physical application form.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>When does the school term begin?</h3>
+      <p>The school follows the national calendar and terms begin in January, May, and September each year.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Are meals provided at school?</h3>
+      <p>Yes, nutritious meals are provided to all students at an additional fee.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What curriculum does the school follow?</h3>
+      <p>We follow the Competency-Based Curriculum (CBC) as guided by the Ministry of Education.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is school transport available?</h3>
+      <p>Yes, transport services are available to select areas at an extra cost. Please contact us for more information.</p>
+    </div>
+  </main>
+</body>
+</html>

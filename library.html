@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library - Royalstart Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #800000;
+      --white: #ffffff;
+      --text-dark: #000000;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--maroon);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px var(--shadow);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a,
+    .dropbtn {
+      color: var(--white);
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--white);
+      min-width: 180px;
+      box-shadow: 0px 8px 16px var(--shadow);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: var(--text-dark);
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      color: var(--maroon);
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .library-intro {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .library-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .section-card {
+      background-color: #f9f9f9;
+      border-left: 5px solid var(--maroon);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px var(--shadow);
+    }
+
+    .section-card h3 {
+      margin-bottom: 0.8rem;
+      color: var(--maroon);
+    }
+
+    .section-card ul {
+      padding-left: 1.2rem;
+    }
+
+    .section-card ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .cta {
+      margin-top: 3rem;
+      background-color: #fff8e1;
+      padding: 2rem;
+      border-left: 5px solid var(--maroon);
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Royalstart Academy</strong></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Why Royalstart</button>
+        <div class="dropdown-content">
+          <a href="mission.html">Mission</a>
+          <a href="vision.html">Vision</a>
+          <a href="corevalues.html">Core Values</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Admissions</button>
+        <div class="dropdown-content">
+          <a href="admission.html">Apply Now</a>
+          <a href="tuitionfees.html">Tuition & Fees</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Learning</button>
+        <div class="dropdown-content">
+          <a href="curriculum.html">Curriculum</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="library.html">Library</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Library</h1>
+    <p class="library-intro">
+      At Royalstart Academy, we believe a well-stocked and engaging library is a cornerstone of academic success and personal growth. Our modern library provides a rich environment for learners to read, explore, research, and develop lifelong learning habits.
+    </p>
+
+    <div class="library-sections">
+      <div class="section-card">
+        <h3>Resource Collection</h3>
+        <ul>
+          <li>Over 1,500 physical books: fiction, non-fiction, and academic.</li>
+          <li>Age-appropriate material for each grade level.</li>
+          <li>Subject reference books aligned with the Kenyan Competency Based Curriculum (CBC).</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+        <h3>Digital Library Access</h3>
+        <ul>
+          <li>eBooks and audiobooks for flexible learning.</li>
+          <li>Tablets available for student use within the library.</li>
+          <li>Access to online academic platforms and encyclopedias.</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+        <h3>Library Programs</h3>
+        <ul>
+          <li>Weekly storytelling sessions for young learners.</li>
+          <li>Reading challenges and book review contests.</li>
+          <li>Library orientation and research skills workshops.</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+        <h3>Study & Reading Spaces</h3>
+        <ul>
+          <li>Quiet reading corners for individual study.</li>
+          <li>Group work tables with educational games and puzzles.</li>
+          <li>Cozy seating to encourage reading culture.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta">
+      For more information about library services or to donate books and resources, kindly reach out to us via:<br>
+      <strong>+254113226979</strong>, <strong>+254729043916</strong>, or <strong>+254725201450</strong>.
+    </div>
+  </main>
+</body>
+</html>

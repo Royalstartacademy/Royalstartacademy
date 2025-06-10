@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition & Fees - Royalstart Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #800000;
+      --white: #ffffff;
+      --text-dark: #000000;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--maroon);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px var(--shadow);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a,
+    .dropbtn {
+      color: var(--white);
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      position: relative;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--white);
+      min-width: 180px;
+      box-shadow: 0px 8px 16px var(--shadow);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: var(--text-dark);
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    nav a:hover,
+    .dropbtn:hover {
+      outline: 2px solid black;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      color: var(--maroon);
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    th, td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--maroon);
+      color: var(--white);
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .contact-confirmation {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      background-color: #fff8e1;
+      padding: 1.5rem;
+      border-left: 5px solid var(--maroon);
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Royalstart Academy</strong></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Why Royalstart</button>
+        <div class="dropdown-content">
+          <a href="mission.html">Mission</a>
+          <a href="vision.html">Vision</a>
+          <a href="corevalues.html">Core Values</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Admissions</button>
+        <div class="dropdown-content">
+          <a href="admission.html">Apply Now</a>
+          <a href="tuitionfees.html">Tuition & Fees</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Learning</button>
+        <div class="dropdown-content">
+          <a href="curriculum.html">Curriculum</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="library.html">Library</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Tuition & Fees</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Fees per Term (Ksh)</th>
+          <th>Exams per Term (Ksh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Playgroup</td>
+          <td>7,600</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Pre-Primary One</td>
+          <td>10,800</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Grade 1</td>
+          <td>13,200</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Grade 2</td>
+          <td>13,200</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Grade 3</td>
+          <td>14,500</td>
+          <td>1500</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="contact-confirmation">
+      <p><strong>Note:</strong> For a complete list of admission requirements and any other inquiries, please confirm by calling one of the following numbers:</p>
+      <ul>
+        <li>+254113226979</li>
+        <li>+254729043916</li>
+        <li>+254725201450</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
